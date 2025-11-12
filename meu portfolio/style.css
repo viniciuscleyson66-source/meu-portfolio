@@ -1,0 +1,60 @@
+*{box-sizing: border-box; margin:0;padding:0}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}   
+
+:root {
+  --avatar-bg: #007bff; /* Cor de fundo do avatar */
+  --avatar-text: #fff;  /* Cor da letra */
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--avatar-bg);
+  color: var(--avatar-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#projetos {
+  margin-top: 80px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+#projetos h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projeto {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+}
